@@ -35,8 +35,8 @@ let categories = [
 
 const Category = () => {
   return (
-    <div className="bg-gray-100 py-8 px-4 sm:px-6 lg:px-8">
-      <div className="container mx-auto">
+    <div className="bg-gray-100 py-8 px-4 sm:px-6 lg:px-8 ">
+      <div className="container mx-auto ">
         <h2 className="text-2xl font-semibold ">Top Categories Of The Month</h2>
         <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-2/3 gap-4 mx-auto">
           {categories.map((category) => (
@@ -45,7 +45,7 @@ const Category = () => {
                 <img
                   src={category.img}
                   alt={category.name}
-                  className="w-full h-full object-cover"
+                  className="w-100 h-70 object-cover "
                 />
                 <div className="absolute bottom-0 left-0 bg-white bg-opacity-80 w-full p-2 text-center">
                   <h3 className="text-sm font-semibold text-gray-800 truncate">
